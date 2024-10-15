@@ -26,6 +26,3 @@ This is a web application developed as a mini project for the course Web Applica
 - doctor gets emailed about the condition of all his/her patients (the entire patient info) every week
 - doctor gets emergency email if patient health turns out to be critical
 
-## Installation
-
-Refer to the [DBMS_MINI-PROJECT.pdf](https://github.com/rudrakpatra/DBMS_MiniProject/blob/master/DBMS_MINI_PROJECT.pdf)
