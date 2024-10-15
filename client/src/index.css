@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: calc(100vw - 10px);
+  margin-right: 100px;
+  padding: 0 0;
+  overflow-x: hidden;
+}
+.my-container {
+  @apply mx-auto container my-2;
+}
+
+h1 {
+  @apply font-bold text-3xl md:text-4xl my-5;
+}
+h2 {
+  @apply font-bold text-lg md:text-xl;
+}
+h3 {
+  @apply font-semibold text-sm md:text-base;
+}
+
+input[type="text"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+input[type="date"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+
+input[type="datetime-local"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+
+input[type="number"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+
+input[type="password"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+input[type="file"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500 bg-slate-50;
+}
+input[type="file"] {
+  @apply outline outline-2 outline-slate-300 rounded-sm px-2 cursor-pointer
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500 bg-slate-50;
+}
+input[type="file"]::file-selector-button {
+  display: none;
+}
+input[type="file"]::file-selector {
+  display: none;
+}
+
+select {
+  height: 26px;
+  @apply bg-slate-50 outline outline-2 outline-slate-300 rounded-sm px-2
+            focus:outline
+            focus:outline-2
+            focus:outline-gray-500;
+}
+
+button.blue {
+  @apply text-blue-900
+            outline outline-2 outline-blue-300
+            bg-blue-300 hover:bg-blue-200 rounded-sm p-2
+            focus:outline text-center  whitespace-nowrap capitalize
+            focus:outline-2
+            focus:outline-blue-500 overflow-hidden;
+}
+
+button.red {
+  @apply text-red-900
+            outline outline-2 outline-red-300
+            bg-red-300 hover:bg-red-200 rounded-sm p-2
+            focus:outline text-center  whitespace-nowrap capitalize
+            focus:outline-2
+            focus:outline-red-500 overflow-hidden;
+}
+
+button.orange {
+  @apply text-orange-900
+            outline outline-2 outline-orange-300
+            bg-orange-300 hover:bg-orange-200 rounded-sm p-2
+            focus:outline text-center  whitespace-nowrap capitalize
+            focus:outline-2
+            focus:outline-orange-500 overflow-hidden;
+}
+button:disabled {
+  @apply text-slate-900
+        outline outline-2 outline-slate-300  text-center  whitespace-nowrap capitalize
+        bg-slate-300 rounded-sm p-2 opacity-50 overflow-hidden;
+}
+button:disabled:hover {
+  @apply text-slate-900
+        outline outline-2 outline-slate-300
+        bg-slate-300 rounded-sm p-2 opacity-50;
+}
+.card {
+  @apply p-2
+        bg-slate-100
+        outline outline-2
+            outline-slate-100
+        rounded-sm
+        overflow-hidden
+        overflow-ellipsis;
+}
+.cell {
+  @apply py-2 overflow-hidden
+  overflow-ellipsis;
+}
+.my-scroll::-webkit-scrollbar {
+  width: 4px;
+  @apply bg-slate-100;
+}
+.my-scroll::-webkit-scrollbar-thumb {
+  width: 4px;
+  @apply bg-slate-300 rounded-full;
+}
